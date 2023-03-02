@@ -1,0 +1,8 @@
+<h2>Welcome to the home page</h2>
+ 
+<h3>Hi {{ current_user.first_name }}! Here is your information: </h3>
+<h3>First Name: {{ current_user.first_name }}</h3>
+<h3>Last Name: {{ current_user.last_name }}</h3>
+<h3>Email: {{ current_user.email }}</h3>
+
+<a href="{{ url_for('logout')}}">Logout Here</a>
